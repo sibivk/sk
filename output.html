@@ -1,46 +1,330 @@
 <!DOCTYPE html>
-<html><head><meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BOT Pulse</title>
 <style>
-body { background-color: #FFD700; margin: 0; font-family: Arial, sans-serif; }
-.header { display: flex; align-items: center; justify-content: center; gap: 10px; padding-top: 20px; }
-.logo { height: 2em; width: auto; }
-h1 { color: #333333; font-size: 6vw; margin: 0; }
-@media (min-width: 600px) { h1 { font-size: 2.5em; } }
-.log-container {
-  background-color: white;
-  border: 2px solid #333333;
-  margin: 20px auto;
-  padding: 15px;
-  width: 90%;
-  max-width: 900px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+* {
   box-sizing: border-box;
 }
-pre { color: black; font-size: 3.5vw; line-height: 1.4; white-space: pre-wrap; word-wrap: break-word; }
-@media (min-width: 600px) { pre { font-size: 1em; } }
-</style></head><body>
-<div class='header'>
-  <img src='seahorse.png' alt='Logo' class='logo'>
+
+body {
+  background-color: #FFD700;
+  margin: 0;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.logo {
+  height: 1.8em;
+  width: auto;
+}
+
+h1 {
+  color: #333;
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.log-container {
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  overflow-x: auto;
+}
+
+.log-entry {
+  padding: 8px 10px;
+  margin: 4px 0;
+  border-radius: 6px;
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.log-entry.separator {
+  background: linear-gradient(90deg, #333 0%, #555 50%, #333 100%);
+  height: 2px;
+  padding: 0;
+  margin: 12px 0;
+  display: block;
+}
+
+.log-entry.info {
+  background-color: #16213e;
+  border-left: 3px solid #4CAF50;
+}
+
+.log-entry.warning {
+  background-color: #2d2a1e;
+  border-left: 3px solid #FFC107;
+}
+
+.log-entry.error {
+  background-color: #2e1a1a;
+  border-left: 3px solid #f44336;
+}
+
+.log-entry.critical {
+  background-color: #2e1a2e;
+  border-left: 3px solid #9C27B0;
+}
+
+.log-entry.debug {
+  background-color: #1a2e2e;
+  border-left: 3px solid #00BCD4;
+}
+
+.log-entry.highlight {
+  background-color: #1a2e1a;
+  border-left: 3px solid #8BC34A;
+}
+
+.timestamp {
+  color: #888;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.level {
+  font-weight: 600;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.level.info { background-color: #4CAF50; color: white; }
+.level.warning { background-color: #FFC107; color: black; }
+.level.error { background-color: #f44336; color: white; }
+.level.critical { background-color: #9C27B0; color: white; }
+.level.debug { background-color: #00BCD4; color: white; }
+
+.message {
+  color: #e0e0e0;
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.message .emoji {
+  font-size: 14px;
+}
+
+.message .highlight-text {
+  color: #4FC3F7;
+}
+
+.message .success-text {
+  color: #81C784;
+}
+
+.message .number {
+  color: #FFB74D;
+}
+
+.status-bar {
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 0 auto 10px auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #e0e0e0;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.live { background-color: #4CAF50; }
+.status-dot.paper { background-color: #FFC107; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.refresh-time {
+  color: #888;
+  font-size: 11px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  body { padding: 8px; }
+  
+  .header { padding: 10px 0; }
+  
+  h1 { font-size: 1.5em; }
+  
+  .log-container { 
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .log-entry {
+    padding: 6px 8px;
+    font-size: 11px;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .timestamp {
+    font-size: 10px;
+  }
+  
+  .level {
+    font-size: 9px;
+    align-self: flex-start;
+  }
+  
+  .message {
+    width: 100%;
+  }
+  
+  .status-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="seahorse.png" alt="Logo" class="logo">
   <h1>BOT Pulse</h1>
 </div>
-<div class='log-container'><pre>
 
-2025-11-29 12:38:50 [INFO    ] ================================================================================
-2025-11-29 12:38:50 [INFO    ] TNA BOT STARTING
-2025-11-29 12:38:50 [INFO    ] ================================================================================
-2025-11-29 12:38:50 [INFO    ] ✓ Configuration validated successfully
-2025-11-29 12:38:50 [INFO    ] Configuration loaded: max_shares=1000, share_block=100
-2025-11-29 12:38:50 [INFO    ] State loaded: last_open_date=2025-11-24, position_qty=0
-2025-11-29 12:38:50 [INFO    ] ✓ Found existing kill.json
-2025-11-29 12:38:50 [INFO    ] ✓ Alpaca clients initialized successfully (PAPER trading mode)
-2025-11-29 12:38:50 [INFO    ] ✓ Options trading enabled with real-time quotes
-2025-11-29 12:38:50 [INFO    ] ================================================================================
-2025-11-29 12:38:50 [INFO    ] 🤖 TNA BOT STARTED
-2025-11-29 12:38:50 [INFO    ]    Time: 2025-11-29 17:38:50 UTC
-2025-11-29 12:38:50 [INFO    ]    Mode: PAPER TRADING
-2025-11-29 12:38:50 [INFO    ]    Check Interval: 30 seconds
-2025-11-29 12:38:50 [INFO    ] ================================================================================
-</pre></div>
-</body></html>
+<div class="status-bar">
+  <div class="status-item">
+    <span class="status-dot paper"></span>
+    <span>PAPER MODE</span>
+  </div>
+  <div class="status-item">
+    <span>TNA Bot v1.0</span>
+  </div>
+  <div class="refresh-time">Updated: 2025-11-29 16:10:11</div>
+</div>
+
+<div class="log-container">
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">================================================================================</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">TNA BOT STARTING</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">================================================================================</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Configuration validated successfully</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">Configuration loaded: max_shares<span class="number">=1000</span>, share_block<span class="number">=100</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">State loaded: last_open_date<span class="number">=2025</span>-11-24, position_qty<span class="number">=0</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Found existing kill.json</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Alpaca clients initialized successfully (PAPER trading mode)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Options trading enabled with real-time quotes</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">================================================================================</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">🤖 TNA BOT STARTED</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Time: 2025-11-29 17:38:50 UTC</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Mode: PAPER TRADING</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Check Interval: 30 seconds</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:38:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">================================================================================</span>
+</div>
+</div>
+
+<script>
+// Update timestamp
+document.querySelector('.refresh-time').textContent = 'Updated: ' + new Date().toLocaleString();
+
+// Auto-scroll to bottom (most recent logs)
+const container = document.querySelector('.log-container');
+container.scrollTop = container.scrollHeight;
+</script>
+
+</body>
+</html>
