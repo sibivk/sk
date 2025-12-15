@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2025-12-15 10:10:02</div>
+  <div class="refresh-time">Updated: 2025-12-15 10:20:02</div>
 </div>
 
 <div class="log-container">
@@ -358,6 +358,185 @@ h1 {
   <span class="timestamp">09:30:04</span>
   <span class="level info">INFO</span>
   <span class="message">Buy ladder initialized: 10 levels starting at <span class="number">$49.18</span> (monthly max: 1000)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 LADDER LEVEL 1 TRIGGERED @ <span class="number">$49.18</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking sell put option:</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    Strike: <span class="number">$49.50</span> (rounded up from <span class="number">$49.18</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    Expiry: 2025-12-19</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$1.53</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟪 CASH-SECURED PUT ORDER: 1 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA251219P00049500</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$49.50</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2025-12-19</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$1.53</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: Ladder level 1 - sell put @ <span class="number">$49.50</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Order submitted successfully (Order ID: 3567bbe0-61be-4914-ad31-983f055a221a)</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">10:19:24</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   ⚠ Order status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:24</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Sold put for ladder level 1</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:24</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🟪 Sell Put - Ladder'</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:24 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Failed to save tna_state.json: Object of type UUID is not JSON serializable</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry warning">
+  <span class="timestamp">10:19:54</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">📥 Put no longer in positions (assigned/expired): TNA251219P00049500</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">📥 PUT ASSIGNMENT DETECTED</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$49.50</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Contracts: 1</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Shares assigned: 100</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '📥 Put Assignment'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">10:19:54</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Level 0 converted from put to shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">🚨 POSITION MISMATCH DETECTED</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Expected: 100 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Actual: 0 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Breakdown: ladder=100, ext=0, reentry=0, premarket=0</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Sold as shares: 0</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Covered by calls: 0 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2025-12-15 10:19:55 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Difference: -100 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry highlight">
+  <span class="timestamp">10:19:55</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🚨 Position Mismatch'</span>
 </div>
 </div>
 
