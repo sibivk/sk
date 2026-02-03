@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>Opening 5 Min Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-02-02 20:45:21</div>
+  <div class="refresh-time">Updated: 2026-02-02 20:55:21</div>
 </div>
 
 <div class="log-container">
@@ -100350,4 +100350,54 @@ h1 {
   <span class="timestamp">11:51:04</span>
   <span class="level debug">DEBUG</span>
   <span class="message"> Exiting get()</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:04</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">TNA: yfinance received OHLC data: 2026-01-27 09:00:00 -&gt; 2026-02-02 16:50:50</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:04</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">TNA: OHLC after cleaning: 2026-01-27 04:00:00-05:00 -&gt; 2026-02-02 11:50:50-05:00</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:04</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">TNA: OHLC after combining events: 2026-01-27 04:00:00-05:00 -&gt; 2026-02-02 11:50:50-05:00</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:04</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">TNA: yfinance returning OHLC: 2026-01-27 04:00:00-05:00 -&gt; 2026-02-02 11:30:00-05:00</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:04</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">Exiting history()</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:10</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">https://paper-api.alpaca.markets:443 "GET /v2/orders?status=closed&amp;limit<span class="number">=50</span> HTTP/1.1" 200 None</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:14</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">Entering history()</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:14</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['TNA', 1, 0])</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:14</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message"> Entering history()</span>
+</div>
+<div class="log-entry debug">
+  <span class="timestamp">11:51:14</span>
+  <span class="level debug">DEBUG</span>
+  <span class="message">TNA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}</span>
 </div>
