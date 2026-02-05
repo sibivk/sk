@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-02-05 09:40:02</div>
+  <div class="refresh-time">Updated: 2026-02-05 09:50:02</div>
 </div>
 
 <div class="log-container">
@@ -398,6 +398,33 @@ h1 {
   <span class="timestamp">09:30:04</span>
   <span class="level info">INFO</span>
   <span class="message">Buy ladder initialized: 2 levels starting at <span class="number">$50.46</span> (monthly max: 200)</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-05 09:46:39 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #1</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Get Last Price</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: SSLError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/trades/latest?symbols=TNA (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:998)')))</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:46:39</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '⚠️ API FAILURE'</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">09:46:39</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">Cannot execute strategy - price unavailable</span>
 </div>
 </div>
 
