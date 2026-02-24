@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-02-24 09:40:01</div>
+  <div class="refresh-time">Updated: 2026-02-24 09:50:02</div>
 </div>
 
 <div class="log-container">
@@ -398,6 +398,217 @@ h1 {
   <span class="timestamp">09:30:28</span>
   <span class="level info">INFO</span>
   <span class="message">Buy ladder initialized: 2 levels starting at <span class="number">$50.56</span> (monthly max: 200)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 SECOND TARGET REACHED: <span class="number">$52.90</span> (Current: <span class="number">$52.97</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$52.97</span> &gt; <span class="number">$51.81</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$53.00</span> (raw: <span class="number">$52.90</span>, 2.1% above avg cost, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-02-27</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$1.83</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 1 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260227C00053000</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$53.00</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-02-27</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$1.83</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: Second-half covered calls at EOW</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:05</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Order submitted successfully (Order ID: 9eec0955-fc2b-4a4b-8aa0-90919c8967ff)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:07</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 1/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:09</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 2/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 3/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:14</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 4/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 5/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">09:41:16</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   ⚠ Order not filled after 10s - CANCELING</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Canceled unfilled call order</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">09:41:16</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Second-half covered-call placement failed; falling back to share exit.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP: 150 shares with <span class="number">$0.25</span> trail</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Second take-profit with trailing stop</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">  ✓ Trailing stop placed successfully (Order ID: 1ad52848-eb92-4560-bda1-cdfe9118d336)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:41:16</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ TNA TRAILING STOP'</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">🚨 POSITION MISMATCH DETECTED</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Expected: 0 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Actual: 150 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Breakdown: ladder=200, ext=100, reentry=0, premarket=0</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Sold as shares: 300</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Covered by calls: 0 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-02-24 09:45:50 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">   Difference: 150 shares</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:45:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🚨 Position Mismatch'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:49:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP DETECTED AS EXECUTED - Position is now zero</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:49:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Found recent fill: 150 shares @ <span class="number">$53.49</span> (0.5 min ago)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:49:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Actual fill price retrieved: <span class="number">$53.49</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">09:49:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Trailing stop profit: <span class="number">$252.00</span> (+3.24%)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">09:49:23</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ Trailing Stop Executed'</span>
 </div>
 </div>
 
