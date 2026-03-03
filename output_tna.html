@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-03-03 11:20:04</div>
+  <div class="refresh-time">Updated: 2026-03-03 11:30:05</div>
 </div>
 
 <div class="log-container">
@@ -1288,6 +1288,528 @@ h1 {
   <span class="timestamp">11:09:03</span>
   <span class="level info">INFO</span>
   <span class="message">✓ Pushover notification sent: '🔴 TNA SELL'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:10</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 SECOND TARGET REACHED: <span class="number">$50.12</span> (Current: <span class="number">$50.17</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$50.17</span> &gt; <span class="number">$49.09</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$50.50</span> (raw: <span class="number">$50.12</span>, 2.1% above avg cost, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$1.73</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 2 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260306C00050500</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$50.50</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$1.73</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: Second-half covered calls at EOW</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Order submitted successfully (Order ID: 41cd6e7f-ca72-4c69-9dea-af05c497494c)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 1/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:15</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 2/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:17</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 3/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:19</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 4/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 5/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:24:21</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   ⚠ Order not filled after 10s - CANCELING</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Canceled unfilled call order</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:24:21</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Second-half covered-call placement failed; falling back to share exit.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP: 250 shares with <span class="number">$0.25</span> trail</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Second take-profit with trailing stop</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">  ✓ Trailing stop placed successfully (Order ID: 47734630-81e2-47fc-a4e9-3292e23efd68)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ TNA TRAILING STOP'</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:24:51</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">📊 State mismatch: state expects 0, Alpaca has 250</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:24:51</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   Auto-fixing state to match Alpaca...</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:24:51</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ State fixed: 2 ladder + 0 extension = 250 shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$49.63</span> (Current: <span class="number">$50.20</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$50.20</span> &gt; <span class="number">$49.09</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$50.00</span> (raw: <span class="number">$49.69</span>, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$2.05</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 1 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260306C00050000</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$50.00</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$2.05</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:21</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: First-half covered calls at EOW</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:25:21 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #1</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell covered calls 1x TNA</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"code":40310000,"message":"account not eligible to trade uncovered option contracts"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '⚠️ API FAILURE'</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:25:22</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Covered-call placement failed; falling back to share sell for first half.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 125 shares @ <span class="number">$50.20</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target (fallback)</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:25:22 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #2</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 125 shares @ $50.20</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"250","held_for_orders":"250","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["47734630-81e2-47fc-a4e9-3292e23efd68"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 16:25:21.924731+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$49.63</span> (Current: <span class="number">$50.22</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$50.22</span> &gt; <span class="number">$49.09</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$50.00</span> (raw: <span class="number">$49.72</span>, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$2.06</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 1 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260306C00050000</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$50.00</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$2.06</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: First-half covered calls at EOW</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:25:52 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #3</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell covered calls 1x TNA</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"code":40310000,"message":"account not eligible to trade uncovered option contracts"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 16:25:21.924731+00:00</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:25:52</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Covered-call placement failed; falling back to share sell for first half.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 125 shares @ <span class="number">$50.22</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target (fallback)</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:25:52 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #4</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 125 shares @ $50.22</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"250","held_for_orders":"250","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["47734630-81e2-47fc-a4e9-3292e23efd68"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">11:25:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 16:25:21.924731+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$49.63</span> (Current: <span class="number">$50.22</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$50.22</span> &gt; <span class="number">$49.09</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$50.00</span> (raw: <span class="number">$49.72</span>, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$2.04</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 1 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260306C00050000</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$50.00</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$2.04</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: First-half covered calls at EOW</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:26:22 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #5</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell covered calls 1x TNA</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"code":40310000,"message":"account not eligible to trade uncovered option contracts"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 16:25:21.924731+00:00</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:26:22</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Covered-call placement failed; falling back to share sell for first half.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 125 shares @ <span class="number">$50.22</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target (fallback)</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 11:26:22 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #6</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 125 shares @ $50.22</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"250","held_for_orders":"250","message":"insufficient qty available for order (requested: 125, available: 0)","related_orders":["47734630-81e2-47fc-a4e9-3292e23efd68"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:22</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 16:25:21.924731+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP DETECTED AS EXECUTED - Position is now zero</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Found recent fill: 250 shares @ <span class="number">$50.02</span> (0.1 min ago)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Actual fill price retrieved: <span class="number">$50.02</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:26:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Trailing stop profit: <span class="number">$233.79</span> (+1.91%)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:26:52</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ Trailing Stop Executed'</span>
 </div>
 </div>
 
