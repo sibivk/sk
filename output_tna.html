@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-03-03 12:20:06</div>
+  <div class="refresh-time">Updated: 2026-03-03 12:30:07</div>
 </div>
 
 <div class="log-container">
@@ -1980,6 +1980,239 @@ h1 {
   <span class="timestamp">11:45:51</span>
   <span class="level info">INFO</span>
   <span class="message">✓ Pushover notification sent: '🔴 TNA SELL'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 SECOND TARGET REACHED: <span class="number">$50.96</span> (Current: <span class="number">$51.04</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP: 50 shares with <span class="number">$0.25</span> trail</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Second take-profit with trailing stop</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:24:11</span>
+  <span class="level info">INFO</span>
+  <span class="message">  ✓ Trailing stop placed successfully (Order ID: f9030456-0a18-41ff-8b51-14bfba545559)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:24:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ TNA TRAILING STOP'</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">12:24:42</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">📊 State mismatch: state expects 0, Alpaca has 50</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">12:24:42</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   Auto-fixing state to match Alpaca...</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:24:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ State fixed: 0 ladder + 0 extension = 50 shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$50.46</span> (Current: <span class="number">$51.04</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Covered call conditions not met, selling shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 25 shares @ <span class="number">$51.04</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 12:25:12 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #7</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 25 shares @ $51.04</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"50","held_for_orders":"50","message":"insufficient qty available for order (requested: 25, available: 0)","related_orders":["f9030456-0a18-41ff-8b51-14bfba545559"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:25:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '⚠️ API FAILURE'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$50.46</span> (Current: <span class="number">$51.04</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Covered call conditions not met, selling shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 25 shares @ <span class="number">$51.04</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 12:25:42 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #8</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 25 shares @ $51.04</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"50","held_for_orders":"50","message":"insufficient qty available for order (requested: 25, available: 0)","related_orders":["f9030456-0a18-41ff-8b51-14bfba545559"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">12:25:42</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 17:25:12.423089+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$50.46</span> (Current: <span class="number">$51.04</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Covered call conditions not met, selling shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 25 shares @ <span class="number">$51.04</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 12:26:12 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #9</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 25 shares @ $51.04</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"50","held_for_orders":"50","message":"insufficient qty available for order (requested: 25, available: 0)","related_orders":["f9030456-0a18-41ff-8b51-14bfba545559"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:12</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 17:25:12.423089+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:43</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$50.46</span> (Current: <span class="number">$50.87</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:43</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Covered call conditions not met, selling shares</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:43</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 25 shares @ <span class="number">$50.87</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:43</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="message">2026-03-03 12:26:43 [ERROR   ]</span>
+</div>
+<div class="log-entry info">
+  <span class="message">API FAILURE #10</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Operation: Sell 25 shares @ $50.87</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Error Type: APIError</span>
+</div>
+<div class="log-entry info">
+  <span class="message">Details: {"available":"0","code":40310000,"existing_qty":"50","held_for_orders":"50","message":"insufficient qty available for order (requested: 25, available: 0)","related_orders":["f9030456-0a18-41ff-8b51-14bfba545559"],"symbol":"TNA"}</span>
+</div>
+<div class="log-entry separator"></div>
+<div class="log-entry info">
+  <span class="timestamp">12:26:43</span>
+  <span class="level info">INFO</span>
+  <span class="message">API failure notification suppressed (rate limit). Last sent: 2026-03-03 17:25:12.423089+00:00</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:27:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">🛡️ TRAILING STOP DETECTED AS EXECUTED - Position is now zero</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:27:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Found recent fill: 50 shares @ <span class="number">$50.85</span> (0.0 min ago)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:27:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Actual fill price retrieved: <span class="number">$50.85</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">12:27:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Trailing stop profit: <span class="number">$47.14</span> (+1.89%)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">12:27:13</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🛡️ Trailing Stop Executed'</span>
 </div>
 </div>
 
