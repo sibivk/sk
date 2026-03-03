@@ -235,7 +235,7 @@ h1 {
   <div class="status-item">
     <span>TNA Bot v1.0</span>
   </div>
-  <div class="refresh-time">Updated: 2026-03-03 11:00:04</div>
+  <div class="refresh-time">Updated: 2026-03-03 11:10:04</div>
 </div>
 
 <div class="log-container">
@@ -1158,6 +1158,136 @@ h1 {
   <span class="timestamp">10:23:28</span>
   <span class="level info">INFO</span>
   <span class="message">✓ Pushover notification sent: '🛑 Cap Reached'</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">📊 FIRST TARGET REACHED: <span class="number">$49.63</span> (Current: <span class="number">$49.66</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Checking covered call conditions:</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Price above avg cost: <span class="number">$49.66</span> &gt; <span class="number">$49.09</span></span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Strike: <span class="number">$49.50</span> (raw: <span class="number">$49.16</span>, rounded to valid)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">    ✓ Premium: <span class="number">$2.06</span> (min: <span class="number">$1.00</span>)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">🟦 COVERED CALL ORDER: 2 contracts</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Symbol: TNA260306C00049500</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Strike: <span class="number">$49.50</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Expiry: 2026-03-06</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Limit Price: <span class="number">$2.06</span></span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   Reason: First-half covered calls at EOW</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:08:50</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Order submitted successfully (Order ID: fd14591b-5498-42ca-a166-d4e66abfedc6)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:53</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 1/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:55</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 2/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:57</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 3/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:08:59</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 4/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:09:01</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ⏳ Waiting for fill... attempt 5/5, status: OrderStatus.NEW</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:09:01</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">   ⚠ Order not filled after 10s - CANCELING</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:09:01</span>
+  <span class="level info">INFO</span>
+  <span class="message">   ✓ Canceled unfilled call order</span>
+</div>
+<div class="log-entry warning">
+  <span class="timestamp">11:09:01</span>
+  <span class="level warning">WARNING</span>
+  <span class="message">✗ Covered-call placement failed; falling back to share sell for first half.</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:09:01</span>
+  <span class="level info">INFO</span>
+  <span class="message">▼ SELL ORDER: 250 shares @ <span class="number">$49.66</span> (estimated)</span>
+</div>
+<div class="log-entry info">
+  <span class="timestamp">11:09:01</span>
+  <span class="level info">INFO</span>
+  <span class="message">  Reason: Partial take-profit - first target (fallback)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:09:01</span>
+  <span class="level info">INFO</span>
+  <span class="message">  ✓ Order submitted successfully (Order ID: c567b803-d6a1-4c76-8971-c103c69e69a5)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:09:03</span>
+  <span class="level info">INFO</span>
+  <span class="message">  ✓ Order FILLED at <span class="number">$49.64</span> (actual)</span>
+</div>
+<div class="log-entry highlight">
+  <span class="timestamp">11:09:03</span>
+  <span class="level info">INFO</span>
+  <span class="message">✓ Pushover notification sent: '🔴 TNA SELL'</span>
 </div>
 </div>
 
